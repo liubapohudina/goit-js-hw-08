@@ -12,7 +12,7 @@ idPlayer.on('timeupdate', throttle(onPlay, 1000));
    // event.preventDefault();
 //}, { passive: false });
 
-const actualTime = Number(localStorage.getItem('videoplayer-current-time'))
+const actualTime = localStorage.getItem('videoplayer-current-time')
  console.log(actualTime)
 idPlayer.setCurrentTime(actualTime)
         .then(function(seconds) {
