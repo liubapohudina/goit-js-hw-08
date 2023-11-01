@@ -3,9 +3,11 @@
   flex-direction: column;
   max-width: 480px;
   padding: 12px;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  background-color: rgb(164, 192, 209);
+  border: 1px solid rgba(183, 176, 176, 0.12);
+  border-radius: 10px;
+  margin: 0 auto;
+  border: none;
 }
 
 .feedback-form label {
@@ -18,12 +20,23 @@
   padding: 8px 12px;
   font: inherit;
   cursor: pointer;
+  border-radius: 10px;
+  background-color: lightskyblue;
+  transition: background-color 300ms linear;
+  border: none;
+}
+.feedback-form button:hover,
+.feedback-form button:focus {
+  background-color: rgb(70, 160, 216);
 }
 
 input,
 textarea {
   padding: 8px;
   font: inherit;
+  border-radius: 10px;
+  background-color: rgb(222, 228, 231);
+  border: none;
 }
 
 textarea {
