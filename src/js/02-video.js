@@ -8,11 +8,11 @@ const onPlay = function (data) {
     localStorage.setItem('videoplayer-current-time', currentTime);
 }
 idPlayer.on('timeupdate', throttle(onPlay, 1000));
-//idPlayer.on('touchstart', function(event) {
-   // event.preventDefault();
-//}, { passive: false });
+idPlayer.on('touchstart', function(event) {
+    event.preventDefault();
+}, { passive: false });
 
-const actualTime = localStorage.getItem('videoplayer-current-time')
+const actualTime = localStorage.getItem('videoplayer-current-time') || 0;
  console.log(actualTime)
 idPlayer.setCurrentTime(actualTime)
         .then(function(seconds) {
